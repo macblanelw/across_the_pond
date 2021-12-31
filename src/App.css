@@ -1,38 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap');
+
+#root {
+  display: block;
+  background-color: black;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inner {
+  width: 90%;
+  margin-left: 6.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+#masthead, #nyt, #guardian {
+  font-family: 'Abril Fatface', cursive !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label, input {
+  display: inline !important;
+}
+
+.main .container .row div {
+  border: 1px solid black;
+}
+
+.header {
+  background-image: url('./images/newspaper.jpg');
+}
+
+.main {
+  background-image: url('./images/ocean.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 900px;
+}
+
+#search-terms {
+  margin-left: 1em;
+  padding-left: 1em;
 }
