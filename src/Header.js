@@ -1,6 +1,16 @@
 import React, { useState, setState } from "react";
+import keys from './api_keys';
 
 function Header() {
+
+  // Request URLs
+  const nyt_url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
+  const guard_url = "https://content.guardianapis.com/search?page=1&";
+
+  // Import API keys
+  const guard_key = keys.guardian_key;
+  const nyt_key = keys.nyt_key;
+
 
   // Format today's date
   const today = new Date();
